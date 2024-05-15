@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: X-O;
+    src: url(../fonts/PressStart2P-Regular.ttf);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #200642;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#board {
+    width: 375px;
+    height: 345px;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    border-radius: 11px;
+    padding: 2px;
+}
+
+#x {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: X-O;
+    font-size: 6em;
+    margin: 13px 0px 0 12px;
+    background: linear-gradient(to right, #fff, #434343);
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+
+#nol {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: X-O;
+    font-size: 6em;
+    margin: 13px 0px 0 12px;
+    background: linear-gradient(to right, #000000, #434343);
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+
+.area {
+    margin: 2px 2px;
+    width: calc(100% / 3 - 6px);
+    height: calc(100% / 3 - 6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 0px 1px #141D4C, 3px 0px 0px 0px #141D4C, 0px 3px 0px 0px #141D4C;
+    border-radius: 5px
+}
+
+.container button {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: X-O;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    margin-top: 15px;
+    outline: none;
+    background: linear-gradient(to right, #FF7, rgb(202, 55, 41));
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+
+.count {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.count .X {
+    font-size: 2em;
+    font-family: X-O;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+
+.count .O {
+    font-size: 2em;
+    font-family: X-O;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: linear-gradient(-225deg, #FFF800 0%, #FF1361 29%, #44107A 67%, #231557 100%);
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+
+.winnerLine {
+    background: linear-gradient(90deg, rgba(0,92,151,1) 0%, rgba(42,43,137,1) 100%);
+
+}
